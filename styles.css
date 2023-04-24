@@ -1,39 +1,75 @@
-*{
-    font-size: .85vw;
-    box-sizing: border-box;
-}
+/* General Styling Rules */
 body{
-    background-image: url(images/diagmonds.png);
-    background-color: rgb(58, 58, 58);
+    background-image: url(images/green-dust-and-scratches.png);
+    background-color:#1B0A1D;
+    margin:0;
+    font-size: .85vw;
 }
-.navigation{
-    height: 8vh;
+
+/* Intro Sequence  */
+
+.interior-hole{
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  margin:0 auto;
+  overflow:hidden;
+  
 }
-.navigation ul{
-    width: 60%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 100%;
-    
+.interior-hole:after{
+  content:'';
+  position:absolute;
+  top:auto; 
+  border-radius:100%;
+  width:62em; height:62em;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 98%;
+  box-shadow: 0px 0px 0px 2000px #505050;
+}
+.outer-ring{ 
+  /* z-index: 0; */
+  display: grid;
+  place-items: center;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  margin:0 auto;
+  overflow:hidden;
+  
+}
+.outer-ring::after{
+  content:'';
+  position:absolute;
+  border-radius:100%;
+  width:62em; height:62em;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 98%;
+  box-shadow: 0px 0px 0px 30px #464646 ;
+}
+.three-lights{
+  /* z-index: 100; */
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+}
+.light{
+  background-color: red;
+  height: 10em;
+  width: 10em;
+  border-radius: 5em;
 
 }
-.navigation ul>li{
-    background-color: black;
-    width: 15%;
-    height: 100%;
-    padding: 0;
-}
-.navigation ul>li>a{
-    text-decoration: none;
-    color:grey;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    
+/* Homepage */
 
-}
+/* About Me Page */
+
+/* Portfolio Page */
+
+/* Resume Page */
+
+/* Contact Me Page */
