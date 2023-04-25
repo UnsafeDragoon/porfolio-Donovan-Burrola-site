@@ -56,13 +56,76 @@ body{
   position: absolute;
   justify-content: space-between;
   display: flex;
+  width: 24em;
+  min-width: 220px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+.glass-panel{
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  margin:0 auto;
+  overflow:hidden;
 }
 .light{
-  background-color: red;
-  height: 10em;
-  width: 10em;
-  border-radius: 5em;
-
+  background-color: #E60000;
+  height: 7em;
+  width: 7em;
+  min-height: 105px;
+  min-width: 105px;
+  border-radius: 100px;
+}
+.tube{
+  position: fixed;
+  bottom: calc( (16vw - 350px)*1.8);
+  max-width: 100%;
+  right: 0;
+}
+.rail{
+  position: fixed;
+  max-width: 100%;
+  width: 80px;
+  bottom: 200px;
+  left: calc( (16vw - 150px)/.9);
+}
+.space-lever{
+  background-color: #767676;
+  position: absolute;
+  width: 97.5px;
+  height: 150px;
+  bottom: calc( (16vw - 40px)*2.6);
+  left: 10%;
+} 
+.space-lever>div{
+  background-color: #515151;
+  width: 50%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 66%;
+}
+.shaft{
+  background-color: #656565;
+  height: 67.5px;
+  /* margin-bottom: auto;*/
+  width: 15%;
+  position: absolute;
+  left: 42%;
+  bottom:37.5px;
+  transition: height .2s, bottom .2s;
+}
+.handle{
+  background-color: #900000;
+  width: 60%;
+  height: 15px;
+  left: 20%;
+  bottom: 105px;
+  position: absolute;
+  transition: bottom .2s;
 }
 /* Homepage */
 
