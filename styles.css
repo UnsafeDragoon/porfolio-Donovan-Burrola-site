@@ -4,12 +4,13 @@ body{
     background-color:#1B0A1D;
     margin:0;
     font-size: .85vw;
+    
 }
 
 /* Intro Sequence  */
 
 .interior-hole{
-  z-index: 0;
+  z-index: 1;
   display: grid;
   place-items: center;
   position:absolute;
@@ -31,6 +32,7 @@ body{
   box-shadow: 0px 0px 0px 2000px #505050;
 }
 .outer-ring{ 
+  z-index: 2;
   /* z-index: 0; */
   display: grid;
   place-items: center;
@@ -49,9 +51,10 @@ body{
   min-width: 300px;
   min-height: 300px;
   max-height: 98%;
-  box-shadow: 0px 0px 0px 30px #464646 ;
+  box-shadow: 0px 0px 0px 6em #464646 ;
 }
 .three-lights{
+  z-index: 2;
   /* z-index: 100; */
   position: absolute;
   justify-content: space-between;
@@ -61,7 +64,22 @@ body{
   margin-left: 35px;
   margin-top: 10px;
 }
-.glass-panel{
+/* .glass-panel{
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  position:fixed;
+  width:63em;
+  height:63em;
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 100%;
+  left:auto;  
+  overflow : hidden;
+  background-color: rgba(255, 255, 255, 0.111);
+} */
+
+.glass-panel{ 
   z-index: 0;
   display: grid;
   place-items: center;
@@ -69,8 +87,21 @@ body{
   width:100vw;
   height:100vh;
   margin:0 auto;
-  overflow:hidden;
+  overflow: hidden;
+  transition: bottom 4s;
+  bottom:0;
 }
+.glass-panel::after{
+  content:'';
+  position:absolute;
+  border-radius:100%;
+  width:62em; height:62em;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 98%;
+  box-shadow: inset 0px 0px 0px 40em #ffffff35 ;
+}
+
 .light{
   background-color: #E60000;
   height: 7em;
@@ -78,14 +109,17 @@ body{
   min-height: 90px;
   min-width: 90px;
   border-radius: 100px;
+  box-shadow:  0px 0px 20px 1.5em #ff000035 ;
 }
 .tube{
+  z-index: 2;
   position: fixed;
   bottom: calc( (16vw - 350px)*1.8);
   max-width: 100%;
   right: 0;
 }
 .rail{
+  z-index: 3;
   position: fixed;
   max-width: 100%;
   width: 80px;
@@ -93,10 +127,11 @@ body{
   left: calc( (16vw - 150px)/.9);
 }
 .space-lever{
+  z-index: 2;
   background-color: #767676;
   position: absolute;
-  width: 70px;
-  height: 130px;
+  width: 100px;
+  height: 160px;
   bottom: calc( (16vw - 40px)*1.9);
   left: 10%;
 } 
@@ -126,6 +161,7 @@ body{
   bottom: 105px;
   position: absolute;
   transition: bottom .2s;
+
 }
 /* Homepage */
 
