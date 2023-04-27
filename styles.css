@@ -6,6 +6,9 @@ body{
     font-size: .85vw;
     
 }
+p{
+  font-family: 'Jura', sans-serif;
+}
 
 /* Intro Sequence  */
 
@@ -189,6 +192,28 @@ body{
   margin-right: 100vh;
 }
 /* Homepage */
+
+/* font-family: 'Jura', sans-serif;
+font-family: 'Nova Mono', monospace; */
+h1{
+  margin: 0;
+  color: white;
+  font-size: 15em; 
+
+  font-family: 'Nova Mono', monospace;
+  font-weight: 10;
+}
+.first{
+
+  transition: margin-right 2s;  
+  margin-right: 1000em;
+}
+.last{
+  transition: margin-left 2s;
+  
+}
+
+
 
 /* About Me Page */
 
