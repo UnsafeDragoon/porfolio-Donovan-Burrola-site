@@ -4,10 +4,44 @@ body{
     background-color:#1B0A1D;
     margin:0;
     font-size: .85vw;
-    
+    height: 120vh;
+    overflow-x: hidden;
 }
 p{
   font-family: 'Jura', sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: none;
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 60%;
+}
+nav ul>li>a{
+  color: #006466;
+  font-size: 2.5em;
+  font-family: 'Nova Mono', monospace;
+  text-decoration: none;
+  transition: color 1s,font-size 1.5s;
+}
+nav ul>li>a:hover{
+  color: white;
+  font-size: 3em;
+}
+nav img:hover{
+  height: 5em;
+}
+
+nav img{
+  height: 4em;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  transition: height 2s;
 }
 
 /* Intro Sequence  */
@@ -96,6 +130,7 @@ p{
   overflow: hidden;
   transition: bottom 4s;
   bottom:0;
+  visibility: visible;
 }
 .glass-panel::after{
   content:'';
@@ -105,7 +140,7 @@ p{
   min-width: 300px;
   min-height: 300px;
   max-height: 98%;
-  box-shadow: inset 0px 0px 0px 40em #ffffff35 ;
+  box-shadow: inset 0px 0px 0px 200em #ffffff35 ;
 }
 
 .light{
@@ -204,13 +239,20 @@ h1{
   font-weight: 10;
 }
 .first{
+  position: absolute;
+  right: 100%;  
+  width: 100%;
+  transition: right 2s;
+  text-align: left;
 
-  transition: margin-right 2s;  
-  margin-right: 1000em;
 }
 .last{
-  transition: margin-left 2s;
-  
+  position: absolute;
+  top: 1.5em;
+  left: 100%;
+  width: 100%;
+  text-align: right;
+  transition: left 2s ;
 }
 
 
@@ -222,3 +264,10 @@ h1{
 /* Resume Page */
 
 /* Contact Me Page */
+
+/* Mobile/tablet Website changes */
+@media (max-width:870px){
+  .last{
+    /* top:3em; */
+  }
+}
