@@ -1,5 +1,11 @@
 let handle = document.getElementById('handle')
 let shaft = document.getElementById('shaft')
+let loadPage = document.querySelector('.load')
+
+
+// right:3650px;
+//   bottom: 2000px;
+//   transform: scale(3.5);
 
 
 function leverOpen(){
@@ -19,9 +25,17 @@ function leverOpen(){
     }
     // setTimeout(y.style.bottom = '30em', 3600)
    
-     setTimeout(function(){y.style.bottom = '80em';}, 3800 );
-     setTimeout(function(){y.style.bottom = '0em';}, 6200 );
-
+     setTimeout(function(){y.style.bottom = '160em';}, 3800 );
+     setTimeout(function(){
+        document.querySelector('.interior-hole').style.transform = 'scale(3.7)'
+        document.querySelector('.outer-ring').style.transform = 'scale(3.7)'
+        document.querySelector('.three-lights').style.marginTop = '-150px'
+        document.querySelector('.space-lever').style.marginLeft = '-25vw'
+        document.querySelector('.rail').style.marginLeft = '-25vw'
+        document.querySelector('.tube').style.marginRight = '-28vw'
+        setTimeout(function(){window.location.href = 'homepage.html'}, 4000 );
+     }, 6200 );
+    //  setTimeout(function(){window.location.href = 'homepage.html'}, 46000000 );
 }
 // for (let i=0; i<=10; i++) {
 //     setTimeout(() => {console.log(i);}, 1000 * i);
