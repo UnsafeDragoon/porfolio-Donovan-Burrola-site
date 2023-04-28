@@ -12,25 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura&family=Nova+Mono&display=swap" rel="stylesheet">
 </head>
 <body onload="homePageInit()">
-
-    <!-- onClick="document.getElementById('middle').scrollIntoView();" -->
     <nav>
-        <a href=""><img src="images/DB.png" alt="D.B. logo"></a>
-        <ul>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="">Contact</a></li>
+        <a href="homepage.html"><img src="images/DB.png" alt="D.B. logo"></a>
+         <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <h1 class="first">DONOVAN</h1>
+        <h1 class="last">BURROLA</h1>  
     <header>
     
-        <h1 class="first">DONOVAN</h1>
-        <h1 class="last">BURROLA</h1>  
+        
         <a href="homepage.html#arrowScroll"><img class='arrow' src="images/Arrow 1.svg" alt="arrow"></a>
     </header>
+    <div id="arrowScroll"></div>
     <section class="title-text">
-        <h2 id="arrowScroll">Introduction</h2>
+        <h2>Introduction</h2>
         <p>Hello, my name is Donovan Burrola and I'm a 
             student web developer located in Fresno, California. This is my portfolio 
             website to showcase the projects I have worked on during my time at the 
@@ -81,5 +81,13 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <style>
+        header{
+            margin-left:0vw ;
+        }
+        html {
+  scroll-behavior: smooth;
+}
+    </style>
 </body>
 </html>

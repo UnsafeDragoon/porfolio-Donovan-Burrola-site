@@ -73,7 +73,24 @@ footer{
 }
 header{
   height: 100vh;
-  /* overflow: hidden; */
+  margin-left:100vw ;
+  transition: margin-left 2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+
+}
+header>h1{
+  /* margin-top: 40%; */
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-shadow: .05px .05em #000000;
+  opacity: 0;
+  transition: opacity 2s,font-size 2s;
 }
 footer>ul{
   list-style: none;

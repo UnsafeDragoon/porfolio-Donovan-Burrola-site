@@ -49,7 +49,12 @@ function homePageInit(){
     document.querySelector('nav').style.top ='0'
     document.querySelector('.first').style.right ='-15vw'
     document.querySelector('.last').style.left ='-15vw'
-
+}
+function sidePage(){
+    document.querySelector('nav').style.top ='0'
+    document.querySelector('header').style.marginLeft = '0'
+    document.querySelector('header>h1').style.opacity ='1'
+    document.querySelector('header>h1').style.fontSize ='15em'
 }
 
 
