@@ -74,7 +74,7 @@ footer{
 header{
   height: 100vh;
   margin-left:100vw ;
-  transition: margin-left 2s;
+  transition: margin-left 3s;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -90,7 +90,7 @@ header>h1{
   margin-bottom: auto;
   text-shadow: .05px .05em #000000;
   opacity: 0;
-  transition: opacity 2s,font-size 2s;
+  transition: opacity 2s,font-size 3s;
 }
 footer>ul{
   list-style: none;
@@ -129,7 +129,7 @@ footer img{
   margin-bottom: 15em;
 }
 section{
-  width: 70%;
+  width: 60%;
   margin-top: 8em;
   margin-left: auto;
   margin-right: auto;
@@ -154,7 +154,12 @@ h3{
 article>div{
   width: 50%;
 }
-article img{
+/* article img{
+  border-radius: 40em;
+  width: 40%;
+  height: 20em;
+} */
+article div{
   border-radius: 40em;
   width: 40%;
   height: 20em;
@@ -421,4 +426,9 @@ h1{
     50%  { transform: translate(0, 10em); }
     100%   { transform: translate(0, -0px); }   
   }
+}
+@media (max-height:700px){
+  .first{
+    top: 5vh;
+  } 
 }
