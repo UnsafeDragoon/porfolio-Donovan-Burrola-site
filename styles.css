@@ -4,17 +4,19 @@ body{
     background-color:#1B0A1D;
     margin:0;
     font-size: .85vw;
-    height: 120vh;
     overflow-x: hidden;
+    height: 200vh;
 }
 p{
   font-family: 'Jura', sans-serif;
 }
 nav{
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   background-color: none;
   width: 100%;
+  /* position: fixed; */
 }
 nav ul{
   display: flex;
@@ -234,7 +236,7 @@ h1{
   margin: 0;
   color: white;
   font-size: 15em; 
-
+  cursor: default;
   font-family: 'Nova Mono', monospace;
   font-weight: 10;
 }
@@ -242,20 +244,45 @@ h1{
   position: absolute;
   right: 100%;  
   width: 100%;
+  /* top:calc(40vh - 5em); */
   transition: right 2s;
   text-align: left;
 
 }
 .last{
   position: absolute;
-  top: 1.5em;
+  /* top: 1.5em; */
+  top:40vh;
   left: 100%;
   width: 100%;
   text-align: right;
   transition: left 2s ;
 }
 
+.arrow{
+  /* width: 8em; */
+  width: 15vh;
+  margin-left: 43.2vw;
+  margin-top: 70vh;
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  transition: visibility 1s;
+}
+.arrow:hover{
+  cursor:pointer;
 
+}
+.header{
+  height: 100vh;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 2em); }
+  100%   { transform: translate(0, -0px); }   
+}
 
 /* About Me Page */
 
