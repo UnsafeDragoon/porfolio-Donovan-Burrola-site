@@ -408,7 +408,39 @@ h1{
 /* About Me Page */
 
 /* Portfolio Page */
-
+.three-links{
+  height: 100vh;
+  width: 100vw;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: scale(-1, 1);
+}
+.trapezoid{
+  /* position: relative; */
+    width: 100vw;
+    height: 10em;
+    transform: skew(40deg);
+    background: red;
+}
+.portfolio-links{
+  display: flex;
+  overflow: hidden;
+}
+.work-type-name{
+  background-color: #0064664d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-type-name h2{
+  text-align: start;
+  margin: 0;
+  /* transform: skew(360deg); */
+  transform: scale(1, 1);
+}
 /* Resume Page */
 
 /* Contact Me Page */
