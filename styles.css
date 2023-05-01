@@ -70,6 +70,7 @@ footer{
   justify-content: space-around;
   margin: 0;
   background-color: #212F45;
+  margin-top: 30vh;
 }
 header{
   height: 100vh;
@@ -420,12 +421,12 @@ h1{
 }
 .trapezoid{
   /* position: relative; */
-    width: 100vw;
-    height: 10em;
+    width: 60vw;
+    height: 100%;
     transform: skew(40deg);
-    background: red;
 }
 .portfolio-links{
+  height: 25%;
   display: flex;
   overflow: hidden;
 }
@@ -436,10 +437,16 @@ h1{
   justify-content: center;
 }
 .work-type-name h2{
-  text-align: start;
+  text-align: center;
   margin: 0;
-  /* transform: skew(360deg); */
-  transform: scale(1, 1);
+  position: absolute;
+  transform: skew(-40deg);
+}
+.portfolio-links>a>div{
+  background-size: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 /* Resume Page */
 
