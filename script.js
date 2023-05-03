@@ -53,14 +53,14 @@ function leverOpen(){
 window.addEventListener("scroll", function() {
     var elementTarget = document.querySelector("header");
     if (window.scrollY === 0) {
-        this.document.querySelector('nav').style.backgroundColor =' rgba(255, 255, 255, 0)'
+        // this.document.querySelector('nav').style.backgroundColor =' rgba(255, 255, 255, 0)'
         if(location.pathname === '/homepage.html'){
             this.document.querySelector('.arrow').style.opacity ='1'
         } else{
             console.log('none')
         }
     } else if (window.scrollY > 0){
-        this.document.querySelector('nav').style.backgroundColor ='rgb(33, 47, 69)'
+        // this.document.querySelector('nav').style.backgroundColor ='rgb(33, 47, 69)'
         if(location.pathname === '/homepage.html'){
             this.document.querySelector('.arrow').style.opacity ='0'
         }
