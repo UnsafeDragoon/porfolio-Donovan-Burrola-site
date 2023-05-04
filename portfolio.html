@@ -38,15 +38,31 @@
 <!--  -->
 
     <div class="three-links">
-        <div style="display: flex;">
-            <div style="background-color: aqua; clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
-height: 15em; width: 60vw;            "></div><div style="background-color: aqua; clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
-height: 15em; width: 60vw;            "></div>
+        <div style="display: flex; width: 100%;">
+            <a href="galleryCode.html"><div class='three-links-image' style="background-image: url(images/pexels-pixabay-270366.jpg);">
+            </div></a>
+            <div class='three-links-title'>
+                <h2 >Coding</h2>
+            </div>
+        </div>
+        <div style="display: flex; width: 100%; ">
+            <a href="galleryEng.html"><div class='three-links-image' style="background-image: url(images/pexels-nothing-ahead-4440720.jpg);">
+            </div></a>
+            <div class='three-links-title'>
+                <h2 >Writing</h2>
+            </div>
+        </div>
+        <div style="display: flex; width: 100%;">
+            <a href="galleryOther.html"><div class='three-links-image' style="background-image: url(images/pexels-magda-ehlers-1054715.jpg);">
+            </div></a>
+            <div class='three-links-title'>
+                <h2 >Other</h2>
+            </div>
         </div>
     </div>
 
     <!--  -->
-
+<!-- 
     <div class="three-links">
         <div class="portfolio-links">
             
@@ -62,7 +78,7 @@ height: 15em; width: 60vw;            "></div>
             <a href="galleryOther.html"><div class="trapezoid" style="background-image: url(images/DB.png); "></div></a>
             <div class="trapezoid work-type-name"><h2 style="transform: skew(-40deg) scale(-1,1); ">Other</h2></div>
         </div>
-    </div>
+    </div> -->
     <footer>
         <ul>
             <li><a href="homepage.html">Home</a></li>
@@ -78,10 +94,38 @@ height: 15em; width: 60vw;            "></div>
         </div>
     </footer>
     <script src="script.js"></script>
-    <!-- <style>
-        nav{
-            top:0;
+    <style>
+        .three-links-title>h2{
+            
+            width: 50%;
+            position: relative;
+            left: 60%;
+            /* height: 100%; */
+            transform: scale(-1,-1);
+            margin:0;
+            top: 35%;
+            
         }
-    </style> -->
+        .three-links-image{
+            position: absolute;
+            transform: scale(-1,1);;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:left;
+        }
+        .three-links-title{
+            position: absolute;
+            right: 0%;
+            background-color:#00646652;
+            transform: scale(1,-1);;
+        }
+        .three-links>div>a>div,
+        .three-links>div>div{
+            width: 120vw;
+            height: 30vh; 
+            clip-path: polygon(82% 0, 100% 0, 100% 100%, 35% 100%);
+
+        }
+    </style>
 </body>
 </html>

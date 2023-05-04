@@ -13,6 +13,12 @@ p{
   color: white;
   font-size: 1.8em;
 }
+h1{
+  animation-name: floatingText;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 h2,
 h3,
 h4{
@@ -25,6 +31,7 @@ h2{
   text-align: center;
   font-size: 5.6em;
   margin-bottom: .2em;
+ 
 }
 nav{
   z-index: 2;
@@ -92,6 +99,7 @@ header>h1{
   text-shadow: .05px .05em #000000;
   opacity: 0;
   transition: opacity 2s,font-size 3s;
+  
 }
 footer>ul{
   list-style: none;
@@ -365,6 +373,7 @@ h1{
   cursor: default;
   font-family: 'Nova Mono', monospace;
   font-weight: 10;
+  
 }
 .first{
   top: calc( (16vw - 400px)*-.9);
@@ -410,15 +419,23 @@ h1{
   50%  { transform: translate(0, 3em); }
   100%   { transform: translate(0, -0px); }   
 }
-
-
+@keyframes floatingText {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, .2em); }
+  100%   { transform: translate(0, -0px); }   
+}
+@keyframes floatingImg {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, .5em); }
+  100%   { transform: translate(0, -0px); }   
+}
 
 /* About Me Page */
 
 /* Portfolio Page */
 .three-links{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /* max-height: 600px; */
   display: flex;
   flex-direction: column;
@@ -455,11 +472,51 @@ h1{
   background-repeat: no-repeat;
 
 }
+
+
+.three-links-title>h2{
+            
+  width: 50%;
+  position: relative;
+  left: 60%;
+  /* height: 100%; */
+  transform: scale(-1,-1);
+  margin:0;
+  top: 35%;
+  text-shadow: #000000 2px 2px;
+}
+.three-links-image{
+  position: absolute;
+  transform: scale(-1,1);;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:left;
+  transition: clip-path 2s;
+}
+.three-links-image:hover{
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 35% 100%);
+}
+
+.three-links-title{
+  position: absolute;
+  right: 0%;
+  background-color:#00646652;
+  transform: scale(1,-1);;
+}
+.three-links>div>a>div,
+.three-links>div>div{
+  width: 120vw;
+  height: 30vh; 
+  clip-path: polygon(82% 0, 100% 0, 100% 100%, 35% 100%);
+
+}
 /* Resume Page */
 
 /* Contact Me Page */
 
+label{
 
+}
 /* Gallery Pages  */
 
 
