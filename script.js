@@ -7,11 +7,11 @@ let galleryData = [
         `],
         ['Internet Safety Website','images/webScreenshot2.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
         `],
-        ['Practice Layout Website','images/webScreenshot1.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Practice Layout Website','images/webScreenshot3.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
         `],
-        ['Income Calculator Website','images/webScreenshot1.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Income Calculator Website','images/webScreenshot4.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
         `],
-        ['Apologize Board Game Website','images/webScreenshot1.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Apologize Board Game Website','images/webScreenshot5.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
         `]
 
 
@@ -112,6 +112,52 @@ function sidePage(){
     document.querySelector('header').style.marginLeft = '0'
     document.querySelector('header>h1').style.opacity ='1'
     document.querySelector('header>h1').style.fontSize ='15em'
+}
+function sucessPage(){
+    let x = Math.floor( Math.random() * 10 )
+    console.log(x)
+    let celebration = document.querySelector('header')
+    if (x === 0){
+        celebration.style.backgroundImage = 'url("images/astrolove.gif")'
+    } else if (x === 1){
+        celebration.style.backgroundImage = 'url("images/astrofistup.gif")'
+    } else if (x === 2){
+        celebration.style.backgroundImage = 'url("images/astromindblown.gif")'
+    } else if (x === 3){
+        celebration.style.backgroundImage = 'url("images/astrothumbsup.gif")'
+    } else if (x === 4){
+        celebration.style.backgroundImage = 'url("images/astroclap.gif")'
+    } else if (x === 5){
+        celebration.style.backgroundImage = 'url("images/astrofloss.gif")'
+    } else if (x === 6){
+        celebration.style.backgroundImage = 'url("images/astrolook.gif")'
+    } else if (x === 7){
+        celebration.style.backgroundImage = 'url("images/astrorock.gif")'
+    } else if (x === 7){
+        celebration.style.backgroundImage = 'url("images/astrostrong.gif")'
+    } 
+    document.querySelector('header').style.marginTop = '0'
+    document.querySelector('header>h1').style.opacity ='1'
+    document.querySelector('header>h1').style.fontSize ='10em'
+
+    
+}
+
+let codeGalleryNum = 0;
+
+function codeGallery(value){
+    codeGalleryNum += value;
+    if(codeGalleryNum < 0){
+        codeGalleryNum = 4;
+    } else if ( codeGalleryNum > 4){
+        codeGalleryNum = 0;
+    } else{
+        console.log('Gallery has not looped')
+    }
+    console.log(galleryData[0][codeGalleryNum])
+    document.getElementById('codeTitle').innerHTML = galleryData[0][codeGalleryNum][0]
+    document.getElementById('codeImage').src = galleryData[0][codeGalleryNum][1]
+    document.getElementById('codeText').innerHTML = galleryData[0][codeGalleryNum][2]
 }
 
 
