@@ -21,31 +21,53 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <header style="background-image: url(images/venus.png);">
+        <h1>Contact</h1>
+    </header>
     <!-- <header> -->
     <h2 style="margin-top: 2em;">Thank You!</h2>
     <section class="title-text" style="margin-top: 2em;">
         <p>Thank you for exploring my website, I hope you enjoyed it as much I did programming it! If you have any questions or concerns, you may use the contact information, social links, or fill out the form to send a prioritized message directly to my email.
         </p>
-        <div>
-            <p>Email: donovan.burrola@gmail.com</p>
-            <p>Phone: (559)-704-9609</p>
+        <div style="text-align: center;">
+            <p style="color: aqua;">Email: donovan.burrola@gmail.com</p>
+            <p style="color: aqua;">Phone: (559)-704-9609</p>
             <div>
-                <img src="images/image 14.png" alt="instagram">
-                <img src="images/image 15.png" alt="twitter">
+                <a><img class='float-images'src="images/instagram-logo.svg" alt="instagram"></a>
+                <a><img class='float-images'src="images/big-twitter-logo.svg" alt="twitter"></a>
+                <a><img class='float-images' src="images/linkedin-big-logo.svg" alt="linked in"></a>
             </div>
         </div>
      </section>
      <h2>Write An Email!</h2>
      <section>
-        <form>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
-            <label for="contactmethod">Contact Method (Optional)</label>
+        <form id='contactForm' action="https://formsubmit.co/donovan.burrola@gmail.com" method="POST">
+            <!-- HoneyPot -->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+
+            <input type="hidden" name="_next" value="https://donovanburrolaporfolio.netlify.app/contact.html">
+
+            <div style="width: 45%;">
+                <label for="fname" >First Name</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div style="width: 45%; margin-left: 10%;"> 
+                <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+            </div>
+            <div style="width: 100%;">
+                <label for="contactmethod">Contact Method (Optional)</label>
             <input type="text" id="contactmethod" name="contactmethod">
-            <label for="message">Type Message Here</label>
-            <input type="text" id="message" name="message">
+            </div>
+            <div style="width: 100%;">
+                <label for="message">Type Message Here</label>
+                <textarea id='typeMessage' name="message" rows="14" cols="10" wrap="soft" required> </textarea>
+            </div>
+
             <input type="submit" value="Submit">
         </form>
      </section>
@@ -74,5 +96,71 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <style>
+        section>div>div{
+            margin-top: 8em;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        section>div>div>a{
+            width: 10%;
+        }
+        section>div>div>a>img{
+            width: 100%;
+            filter: invert(1);
+            
+        }
+        form>div{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        form>div>input{
+            background-color: #00646685;
+            color: white;
+            border: none;
+            height: 2em;
+            border-radius: 2em;
+            padding: .5em;
+        }
+        form>div>label{
+            color: white;
+            font-family: 'Jura', sans-serif;
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        #typeMessage{
+            background-color: #00646685;
+            border: none;
+            color: white;font-family: 'Jura', sans-serif;
+            font-size: 1em;
+            border-radius: 2em;
+            padding: 1em;
+        }
+
+        form>input{
+            background-color: #006466;
+            color: white;
+            font-family: 'Jura', sans-serif;
+            font-size: 1.2em;
+            width: 20%;
+            height: 2.5em;
+            border-radius: 2em;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        form>input:hover{
+            background-color: #01494b;
+            cursor:pointer;
+        }
+    </style>
 </body>
 </html>

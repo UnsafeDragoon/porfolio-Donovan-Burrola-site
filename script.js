@@ -24,6 +24,26 @@ let galleryData = [
     ]
 ]
 
+
+
+
+
+
+
+
+let sections = document.querySelectorAll('section')
+let headings = document.querySelectorAll('h2')
+
+
+
+
+
+
+
+
+
+
+
 function leverOpen(){
     let x = document.querySelectorAll('.light')
     let y = document.querySelector('.glass-panel')
@@ -52,6 +72,7 @@ function leverOpen(){
 }
 window.addEventListener("scroll", function() {
     var elementTarget = document.querySelector("header");
+    const viewportBottom = window.scrollY + window.innerHeight;
     if (window.scrollY === 0) {
         // this.document.querySelector('nav').style.backgroundColor =' rgba(255, 255, 255, 0)'
         if(location.pathname === '/homepage.html'){
@@ -65,7 +86,21 @@ window.addEventListener("scroll", function() {
             this.document.querySelector('.arrow').style.opacity ='0'
         }
     }
+    sections.forEach(section => {
+        if (section.offsetTop < viewportBottom && section.offsetTop + section.offsetHeight >= window.scrollY) {
+          section.style.opacity = 1;
+        }
+      });
+      headings.forEach(heading => {
+        if (heading.offsetTop < viewportBottom && heading.offsetTop + heading.offsetHeight >= window.scrollY) {
+          heading.style.opacity = 1;
+        }
+      });
   });
+
+
+
+
 function homePageInit(){
     document.querySelector('.arrow').style.marginTop='80vh'
     document.querySelector('nav').style.top ='0'

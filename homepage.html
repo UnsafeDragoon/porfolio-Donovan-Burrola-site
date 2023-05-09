@@ -29,7 +29,7 @@
         <a href="homepage.html#arrowScroll"><img class='arrow' src="images/Arrow 1.svg" alt="arrow"></a>
     </header>
     <div id="arrowScroll"></div>
-    <section class="title-text">
+    <section class="title-text" id="test">
         <h2>Introduction</h2>
         <p>Hello, my name is Donovan Burrola and I'm a 
             student web developer located in Fresno, California. This is my portfolio 
@@ -43,10 +43,10 @@
                 <h3>About Me</h3>
                 <p>This section is, as you can guess, all about me! It includes my dreams and ambitions in life and motivations for doing so. <a href="aboutme.html">Read more about me here!</a></p>
             </div>
-            <div class="homepage-images" title='question mark symbol next to about me article' style="background-image: url(images/question-mark-circled-svgrepo-com.svg); filter:invert(1)"></div>
+            <div class="float-images" title='question mark symbol next to about me article' style="background-image: url(images/question-mark-circled-svgrepo-com.svg); filter:invert(1)"></div>
         </article>
         <article>
-            <div class="homepage-images" title='file cabnet symbol next to portfolio article' style="background-image: url(images/files-svgrepo-com.svg); filter:invert(1)"></div>
+            <div class="float-images" title='file cabnet symbol next to portfolio article' style="background-image: url(images/files-svgrepo-com.svg); filter:invert(1)"></div>
             <div>
                 <h3>Portfolio</h3>
                 <p>If you have liked the website you are viewing now, feel free to explore some of the other websites I have developed during my learning experience at CART. <a href="portfolio.html">Look at my catalogue here!</a></p>
@@ -57,10 +57,10 @@
                 <h3>Resume</h3>
                 <p>If you would like a more technical view of my skills and experiences, then take a look at my printable resume  along with a letter of recommendation and snippets of my formatted HTML. <a href="resume.html">Look at my resume here!</a></p>
             </div>
-            <div class="homepage-images" title='document symbol next to resume article' style="background-image: url(images/files-svgrepo-com\ \(1\).svg); filter:invert(1)"></div>
+            <div class="float-images" title='document symbol next to resume article' style="background-image: url(images/files-svgrepo-com\ \(1\).svg); filter:invert(1)"></div>
         </article>
         <article>
-            <div class="homepage-images" title='phone symbol next to contact me article' style="background-image: url(images/phone-svgrepo-com.svg); filter:invert(1)"></div>
+            <div class="float-images" title='phone symbol next to contact me article' style="background-image: url(images/phone-svgrepo-com.svg); filter:invert(1)"></div>
             <div>
                 <h3>Contact</h3>
                 <p>Lastly, if you have any questions or concerns, please make them apparent and <a href="contact.html">contact me here!</a></p>
@@ -88,12 +88,6 @@
         }
         html {
             scroll-behavior: smooth;
-        }
-        .homepage-images{
-            animation-name: floatingText;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
         }
         p>a{
             color: aqua;

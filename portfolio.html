@@ -21,18 +21,13 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <header style="background-image: url(images/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA\'s_Solar_Dynamics_Observatory_-_20100819.png);">
+    <header style="background-image: url(images/FullMoon2010.png);">
         <h1>Portfolio</h1>
     </header>
     <section class="title-text">
         <h2>My Work Overview</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequatur dolore tempora hic, corrupti nostrum in magni 
-            tempore deserunt, nulla odit repudiandae facere odio vitae.
-             Esse obcaecati explicabo vitae quisquam beatae. Lorem ipsum 
-             dolor sit amet consectetur adipisicing elit. Sint commodi cum 
-             repellat quam nemo unde, sequi consequuntur tempora. Mollitia
-              beatae molestias magnam iure, voluptates inventore impedit deserunt quas corrupti ea?</p>
+        <p>This page showcases the work I have put into the Center for Advanced Research and Technology. There are three categories to select from, coding, writing, and an “other” examples gallery.  Inside of each section is a gallery-like showcase in which each project gets a dedicated display.
+        </p>
     </section>
 
 <!--  -->
@@ -45,11 +40,11 @@
                 <h2 >Coding</h2>
             </div>
         </div>
-        <div style="display: flex; width: 100%; ">
+        <div style="display: flex; width: 100%; transform: scale(-1,1);">
             <a href="galleryEng.html"><div class='three-links-image' style="background-image: url(images/pexels-nothing-ahead-4440720.jpg);">
             </div></a>
             <div class='three-links-title'>
-                <h2 >Writing</h2>
+                <h2 style="transform: scale(1,-1);">Writing</h2>
             </div>
         </div>
         <div style="display: flex; width: 100%;">
@@ -104,7 +99,7 @@
             transform: scale(-1,-1);
             margin:0;
             top: 35%;
-            
+            animation-name: none;
         }
         .three-links-image{
             position: absolute;
@@ -126,6 +121,7 @@
             clip-path: polygon(82% 0, 100% 0, 100% 100%, 35% 100%);
 
         }
+        
     </style>
 </body>
 </html>
