@@ -155,12 +155,17 @@ function sucessPage(){
     document.querySelector('header>h1').style.fontSize ='10em'
 }
 function codeGalleryInit(){
-    
     document.querySelector('.backarrow').style.left = '0'
     document.querySelector('.gallery-title').style.bottom = '0'
     document.querySelector('.code-display').style.left ='0'
     document.querySelector('.code-article').style.right = '0'
 }
+function engGalleryInit(){
+    document.querySelector('.backarrow').style.left = '0'
+    document.querySelector('.gallery-title').style.bottom = '0'
+    document.querySelector('.prev-next-arrows').style.top = '0'
+}
+
 
 let codeGalleryNum = 0;
 

@@ -557,6 +557,11 @@ label{
   transition: bottom 2s;
   bottom: 100vh;
 }
+.prev-next-arrows{
+  position: relative;
+  transition: top 2s;
+  top:100vh;
+}
 
 /* Mobile/tablet Website changes */
 @media (max-width:870px){
