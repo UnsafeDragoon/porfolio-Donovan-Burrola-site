@@ -11,24 +11,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura&family=Nova+Mono&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a href="portfolio.html"><img src="images/Group 11.png" alt="backwards icon" ></a>
+<body onload="codeGalleryInit()">
+    <a class='backarrow' href="portfolio.html"><img src="images/Group 11.png" alt="backwards icon" ></a>
     <header>
-        <h3 id="codeTitle">National Injury Prevention Day</h3>
-        <div>
+        <h3 class="gallery-title" id="codeTitle">National Injury Prevention Day</h3>
+        <div class="code-display">
             <div><a onclick="codeGallery(-1)"><img src="images/Group 10.png" alt="arrow-previous"></a></div>
             <a><img id='codeImage' src="images/webScreenshot1.png" alt="website screenshot"></a>
-            <div><a onclick="codeGallery(1)"><img src="images/Group 10.png" alt="arrow-next" style="transform: scale(-1,1);"></a></div>
+            <div><a class='float-images' onclick="codeGallery(1)"><img src="images/Group 10.png" alt="arrow-next" style="transform: scale(-1,1);"></a></div>
         </div>
         
     </header>
-    <article>
+    <article class="code-article">
         <p id="codeText">The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
         </p>
     </article>
     <script src="script.js"></script>
     <style>
+        body{
+            /* overflow-y:hidden;   */
+        }
         body>a>img{
+            
             width: 50px;
         }
         body>a{
@@ -39,15 +43,24 @@
         header{
             height: fit-content;
             flex-direction: column;
+            transition: none;
             margin-left: 0;
+            
         }
         header>div{
+            position: relative;
+            left: 100VW;
+            transition: left 2s;
+
             display: flex;
             justify-content: space-around;
+            
         }
         header>div>a>img{
-            width: 80vw;
-            max-width: 1000px;
+            width: 50vw;
+            max-width: 1000px;;
+            /* box-shadow: 1em 1em 100px 0px white; */
+            animation: glow 2s infinite alternate;
         }
         header>div>div>a{
             height: 100%;
@@ -61,14 +74,26 @@
             width: 100%;
             text-align: center;
             margin-top: 1em;
-            margin-bottom: 0;
+            margin-bottom: 1.5em;
         }
         article{
             width: 80%;
+            margin-top: 4em;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 4em;
+            margin-bottom: 4em;            
+            position: relative;
+            right: 100vw;
+            transition: right 2s;
         }
+        @keyframes glow {
+  from {
+    box-shadow: 0 0 100px -10px #ffffff;
+  }
+  to {
+    box-shadow: 0 0 100px 10px #ffffff;
+  }
+}
     </style>
 </body>
 </html>

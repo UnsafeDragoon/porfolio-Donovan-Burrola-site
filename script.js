@@ -5,21 +5,34 @@ let galleryData = [
     [
         ['National Injury Prevention Day Website','images/webScreenshot1.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
         `],
-        ['Internet Safety Website','images/webScreenshot2.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Internet Safety Website','images/webScreenshot2.png',`The Internet safety website similarly to the National Injury Prevention Day website was to be an informative site that also offers possible solutions on an individual level. Unlike the previous site, however, this project had a gimmick attached to it; we were not allowed to work on our own site for the majority of the time given. This would instead be replaced by a rotating system of workers and managers. This would test our collaboration and ability to communicate our desires with fellow classmates. Reflecting back, this experience helped teach me the importance of structuring code properly. Sometimes when one worker was finished and another took their place, they would struggle in finding a way to pick up where they left off since the last person had such specific styling names and organization. In the last few days, we were given the opportunity to wrap up any features in our own code and I persisted in making the site more device friendly. 
+
         `],
-        ['Practice Layout Website','images/webScreenshot3.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Practice Layout Website','images/webScreenshot3.png',`This was the only website in which our class didn't have to do any planning whatsoever. The assignment was to replicate the site to the given prototypes as we would with a potential client. Since I had much more flexibility in terms of time for programming, I made sure to make the site as responsive as I could while still using HTML and CSS. In the end I was happy with how it turned out and it was a nice change of pace following another prototype for once.
+
         `],
-        ['Income Calculator Website','images/webScreenshot4.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Income Calculator Website','images/webScreenshot4.png',`Prior to the Income Calculator website, I have initiated JavaScript courses on my own time to prepare for an assignment using JavaScript, HTML, and CSS. Now was the time to put it into practice. Our assignment was to create a website that calculates a variety of incomes based on the selection a visitor makes from a list of careers. Learning JavaScript was like how I first experienced CSS, a lot of confusion and persistence. I would say that putting the newly learned language to use was so much more helpful than studying it, but it still did not give me a good enough understanding to let me confidently say I can use JavaScript, that does not mean that I did not try my best, rather that I needed more practice. Reflecting on this site with current knowledge, I see that I could have vastly reduced the amount of JavaScript required in the initial build, and I am proud to say that. One project difference gave me the experience I needed to see my past mistakes and grow from it, with more to come.
+
         `],
-        ['Apologize Board Game Website','images/webScreenshot5.png',`The National Injury Prevention Day website was a collaborative partner project and the first real website we have ever made in the class. At this point we have learned fundamental CSS and HTML skills and this was when we really discovered the strengths and weaknesses of making a website with the two. We had a different assignment than most of the class as we were given a choice to make a website as an entry for a contest hosted by the Trauma Center Association of America. The goal of this site was to give information on living safer lives with different pages exploring different sub-topics. Even though I was having trouble with understanding CSS, I investigated new methods to write commands and developed some new ideas in the process. Reflecting on this project with what I know now, I see so many potential areas to improve and expand upon the site's original idea, which makes me want to work on it even more, well after it was due.
+        ['Apologize Board Game Website','images/webScreenshot5.png',`The Apologize board game was the only coding assignment to have groups larger than 2 people, which required the most communication as one partner may cause a conflict to the entire project. The assignment was to adapt a board game into a digital interface with the addition of a few modifications using HTML, CSS, and JavaScript. This project hit close to home, because it is my dream to be a game developer and this was technically creating a game. The majority of this site was coded in JavaScript which gave me the best opportunity to understand JavaScript I could have possibly asked for. As a result of this, I was required to plan out and create algorithms that were compatible with my partners' code. This was a big project and we got many of our intended features complete with the exception of a select few. Even though the site was not fully complete, I was very proud of it and by the end of the project I found myself still wanting to work on it. Reflecting on the project, my skill in JavaScript dramatically improved and I created much more efficient and flexible code than those that I wrote in my Income Calculator website.
+
         `]
 
 
     ],
     [
-
+        ['Career Research Essay','writtenPDFs/Career of Choice Research Essay.pdf', `For my National Injury Prevention Day entry website, my partner and I decided to write topics and subtopics for the site as a whole. Each focusing on specific aspects of their parent heading. We continuously sourced articles in facts and statistics we shared in our body paragraphs. One side fact about this site is that each topic has a color theme to distinguish their sections with the exception of the landing page which is colorful in nature.
+        `],
+        ['Content For Injury Prevention Day', 'writtenPDFs/Content] - Google Docs.pdf',`For my National Injury Prevention Day entry website, my partner and I decided to write topics and subtopics for the site as a whole. Each focusing on specific aspects of their parent heading. We continuously sourced articles in facts and statistics we shared in our body paragraphs. One side fact about this site is that each topic has a color theme to distinguish their sections with the exception of the landing page which is colorful in nature.
+        `],
+        ['Content For Internet Safety','writtenPDFs/text.pdf',`Since this project was individual, I was also given the task to write all of the content for all the webpages. My overarching goal was to ground the argument in facts and logic to convince the visitor to take protective measures against various online dangers such as your digital footprint, harmful softwares, and handling your personal information.
+`],
+        [`E.M. Forster's "The Machine Stops"`,'writtenPDFs/donovan burrola - _The Machine Stops_ questions.pdf',`This writing prompt was our personal interpretation of the story “The Machine Stops” created by E.M. Forster, which is a story about a human population living underground under the watchful eye of a machine that takes care of them. The people in the story are physically unfit and are reliant on the machine to survive to the point where they condemn the outside world entirely. I described it as a dystopian tale and compared the author's portrayal of the world in the story to modern day society.
+        `]
     ],
     [
+    ['Adobe Photoshop']
+    ['Meta Javascript Course']
 
     ]
 ]
@@ -60,6 +73,7 @@ function leverOpen(){
    
      setTimeout(function(){y.style.bottom = '180em';}, 3800 );
      setTimeout(function(){
+        
         y.style.visibility = 'hidden';
         document.querySelector('.interior-hole').style.transform = 'scale(3.7)'
         document.querySelector('.outer-ring').style.transform = 'scale(3.7)'
@@ -139,25 +153,53 @@ function sucessPage(){
     document.querySelector('header').style.marginTop = '0'
     document.querySelector('header>h1').style.opacity ='1'
     document.querySelector('header>h1').style.fontSize ='10em'
-
+}
+function codeGalleryInit(){
     
+    document.querySelector('.backarrow').style.left = '0'
+    document.querySelector('.gallery-title').style.bottom = '0'
+    document.querySelector('.code-display').style.left ='0'
+    document.querySelector('.code-article').style.right = '0'
 }
 
 let codeGalleryNum = 0;
 
 function codeGallery(value){
-    codeGalleryNum += value;
-    if(codeGalleryNum < 0){
-        codeGalleryNum = 4;
-    } else if ( codeGalleryNum > 4){
-        codeGalleryNum = 0;
-    } else{
-        console.log('Gallery has not looped')
-    }
-    console.log(galleryData[0][codeGalleryNum])
-    document.getElementById('codeTitle').innerHTML = galleryData[0][codeGalleryNum][0]
-    document.getElementById('codeImage').src = galleryData[0][codeGalleryNum][1]
-    document.getElementById('codeText').innerHTML = galleryData[0][codeGalleryNum][2]
+    
+    document.querySelector('.backarrow').style.left = '-100vw'
+    document.querySelector('.gallery-title').style.bottom = '100vh'
+    document.querySelector('.code-display').style.left ='100vw'
+    document.querySelector('.code-article').style.right = '100vw'
+    setTimeout(function(){ codeGalleryNum += value;
+        if(codeGalleryNum < 0){
+            codeGalleryNum = 4;
+        } else if ( codeGalleryNum > 4){
+            codeGalleryNum = 0;
+        } else{
+            console.log('Gallery has not looped')
+        }
+        console.log(galleryData[0][codeGalleryNum])
+        document.getElementById('codeTitle').innerHTML = galleryData[0][codeGalleryNum][0]
+        document.getElementById('codeImage').src = galleryData[0][codeGalleryNum][1]
+        document.getElementById('codeText').innerHTML = galleryData[0][codeGalleryNum][2]
+        document.querySelector('.backarrow').style.left = '0'
+         document.querySelector('.gallery-title').style.bottom = '0'
+        document.querySelector('.code-display').style.left ='0'
+        document.querySelector('.code-article').style.right = '0'
+}, 2000 );
+
+    // codeGalleryNum += value;
+    // if(codeGalleryNum < 0){
+    //     codeGalleryNum = 4;
+    // } else if ( codeGalleryNum > 4){
+    //     codeGalleryNum = 0;
+    // } else{
+    //     console.log('Gallery has not looped')
+    // }
+    // console.log(galleryData[0][codeGalleryNum])
+    // document.getElementById('codeTitle').innerHTML = galleryData[0][codeGalleryNum][0]
+    // document.getElementById('codeImage').src = galleryData[0][codeGalleryNum][1]
+    // document.getElementById('codeText').innerHTML = galleryData[0][codeGalleryNum][2]
 }
 
 
