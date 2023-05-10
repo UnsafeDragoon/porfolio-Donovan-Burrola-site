@@ -33,8 +33,10 @@ let galleryData = [
         `]      
     ],
     [
-    ['Adobe Photoshop']
-    ['Meta Javascript Course']
+    ['Adobe Photoshop','images/Group 19.png',`During the course of my time as a web developer, I have been required to design a variety of website related images including; assets for the website, the website design itself, and design aspects for the eventual presentation following the completion of our websites.
+    `],
+    ['Meta Javascript Course','images/certificate.PNG',`On my own time, I learned JavaScript to assist in web development for class projects. This course included its own programming assignments, one of which included the usage of JSON. The course was officially offered by Meta, and was presented by coursera.
+    `]
 
     ]
 ]
@@ -254,27 +256,31 @@ function otherGallery(value){
     document.querySelector('.backarrow').style.left = '-100vw'
     document.querySelector('.gallery-title').style.bottom = '100vh'
     document.querySelector('.prev-next-arrows').style.top = '100vh'
-    document.querySelector('.english-sample').style.right = '100vw'
-    document.querySelector('.eng-gallery-text').style.left ='100vw'
+    document.querySelector('.other-sample').style.right = '100vw'
+    document.querySelector('.other-gallery-text').style.right ='100vw'
+    document.querySelector('.other-sample').style.left ='100vw'
+    
+    otherGalleryNum += value;
+    if(otherGalleryNum < 0){
+        otherGalleryNum = 1;
+    } else if ( otherGalleryNum > 1){
+        otherGalleryNum = 0;
+    } else{
+        console.log('Gallery has not looped')
+    }
     setTimeout(function(){ 
-        otherGalleryNum += value;
-        if(otherGalleryNum < 0){
-            otherGalleryNum = 3;
-        } else if ( otherGalleryNum > 3){
-            otherGalleryNum = 0;
-        } else{
-            console.log('Gallery has not looped')
-        }
+       
         console.log(galleryData[1][otherGalleryNum])
-        
+        // document.getElementById('otherImage').style.left ='0vw'
         document.getElementById('otherTitle').innerHTML = galleryData[2][otherGalleryNum][0]
-        document.getElementById('otherSample').src = galleryData[2][otherGalleryNum][1]
+        document.querySelector('.other-sample').src = galleryData[2][otherGalleryNum][1]
         document.getElementById('otherText').innerHTML = galleryData[2][otherGalleryNum][2]
         document.querySelector('.backarrow').style.left = '0'
-        document.querySelector('.gallery-title').style.bottom = '0'
-        document.querySelector('.prev-next-arrows').style.top = '0'
-        document.querySelector('.other-sample').style.right = '0'
-        document.querySelector('.other-gallery-text').style.left ='0'
+    document.querySelector('.gallery-title').style.bottom = '0'
+    document.querySelector('.prev-next-arrows').style.top = '0'
+    document.querySelector('.other-sample').style.right = '0'
+    document.querySelector('.other-gallery-text').style.right ='0'
+    document.querySelector('.other-sample').style.left ='0'
        
 }, 2000 );
 }
