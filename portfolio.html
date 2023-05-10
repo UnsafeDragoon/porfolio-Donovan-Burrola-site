@@ -26,10 +26,14 @@
     </header>
     <section class="title-text">
         <h2>My Work Overview</h2>
-        <p>This page showcases the work I have put into the Center for Advanced Research and Technology. There are three categories to select from, coding, writing, and an “other” examples gallery.  Inside of each section is a gallery-like showcase in which each project gets a dedicated display.
+        <p>This page showcases the work I have put into the Center for Advanced Research and Technology. There are three categories to select from, coding, writing, and an “other” examples gallery.  Inside of each section is a gallery-like showcase in which each project gets a dedicated display. Both writing and coding pages, have the sample work embeded or linked so you may see them firsthand.
         </p>
     </section>
-
+    <section class="image-carousel">
+        <img src="images/Group 10.png" alt="arrow-previous">
+        <div id="imageCarousel"></div>
+        <img  src="images/Group 10.png" style="transform: scale(-1);" alt="arrow-next">
+    </section>
 <!--  -->
 
     <div class="three-links">
@@ -129,6 +133,29 @@
 
         }
         
+    
     </style>
+    <script>
+    let imageRotationNum = 0;
+    let imageSelection = ['url(images/webScreenshot5.png)','url(images/webScreenshot4.png)','url(images/webScreenshot1.png)']
+
+
+    function changeImage(){
+        document.getElementById('imageCarousel').style.backgroundImage = imageSelection[imageRotationNum]
+    }
+
+
+    setInterval(function() {
+
+        imageRotationNum+=1
+        if(imageRotationNum<0){
+            imageRotationNum = 2;
+        } else if(imageRotationNum >2){
+            imageRotationNum = 0;
+        }
+        changeImage()
+  console.log('s')
+}, 2000);
+    </script>
 </body>
 </html>

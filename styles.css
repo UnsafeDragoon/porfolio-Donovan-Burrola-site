@@ -8,6 +8,14 @@ body{
     
     /* height: 120vh; */
 }
+@keyframes glow {
+  from {
+    box-shadow: 0 0 100px -10px #ffffff;
+  }
+  to {
+    box-shadow: 0 0 100px 10px #ffffff;
+  }
+} 
 p{
   font-family: 'Jura', sans-serif;
   color: white;
@@ -25,6 +33,56 @@ h4{
   color: white;
   font-family: 'Nova Mono',monospace;
   font-weight: 200;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.dropdown>button{
+  
+  border:none;
+  border-radius:5px;
+  padding:0;
+  background-color:rgba(139, 69, 19, 0);
+  font-size:2.5em;
+  cursor:pointer;
+  color: #006466;
+  font-family: 'Nova Mono', monospace;
+  transition: all 2s;
+}
+
+.dropdown>button:hover{
+  color:#ffffff;
+  font-size: 3em;
+}
+
+.dropdown-options {
+  display: none;
+  background-color: #006466cf;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #ffffff;
+  /* padding: 5px; */
+  font-size: 1.2em;
+  font-family: 'Nova Mono', monospace;
+
+  text-decoration: none;
+  padding:1em 1.5em;
+  transition: all .5s;
+}
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
 }
 h2{
   width: 100%;
@@ -52,7 +110,10 @@ nav ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
-  width: 60%;
+  width: 100%;
+}
+ul>li>img{
+  display: none;
 }
 nav ul>li>a{
   color: #006466;
@@ -539,6 +600,28 @@ h1{
   clip-path: polygon(82% 0, 100% 0, 100% 100%, 35% 100%);
 
 }
+.image-carousel{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.image-carousel>div{
+  width: 50%;
+  /* background-color: #00bfc3; */
+  height: 30em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-carousel>img{
+  height: fit-content;
+  width: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.image-carousel>img:hover{
+  cursor: pointer;
+}
 /* Resume Page */
 
 /* Contact Me Page */
@@ -570,6 +653,45 @@ label{
   }
   .first{
     top:15vh;
+  }
+  nav{
+    flex-direction: row-reverse;
+
+  }
+  /* nav ul{
+    flex-direction: column;
+    justify-content: start;
+    height: 100vh;
+    background-color: #212F45;
+    width: 30%;
+    position: fixed;
+  } */
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+  nav ul>li>a{
+font-size: 6em;
+  }
+  nav ul>li>a:hover{
+    font-size: 6em;
+  }
+  .dropdown>button{
+    font-size: 6em;
+  }
+  .dropdown>button:hover{
+    color:#ffffff;
+    font-size: 6em;
+  }
+  .mobile-dropdown{
+    position: fixed;
+    background-color: #212F45;
+    height: 100vh;
+    left: 0;
+  }
+  ul>li>img{
+    display: block;
   }
   @keyframes floating {
     0% { transform: translate(0,  0px); }
