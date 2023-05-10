@@ -21,14 +21,16 @@ let galleryData = [
 
     ],
     [
-        ['Career Research Essay','writtenPDFs/Career of Choice Research Essay.pdf', `For my National Injury Prevention Day entry website, my partner and I decided to write topics and subtopics for the site as a whole. Each focusing on specific aspects of their parent heading. We continuously sourced articles in facts and statistics we shared in our body paragraphs. One side fact about this site is that each topic has a color theme to distinguish their sections with the exception of the landing page which is colorful in nature.
+        ['Career Research Essay','writtenPDFs/Career of Choice Research Essay.pdf', `This writing assignment was one in that we wrote about a particular career of choice that we were personally interested in. I decided to write about game developers and the problems that they encounter on a daily basis. This was personal to me because in the future I aspire to become one myself and it was an opportunity to not only discover more about my intended future, but also express my passion for video games in general.
         `],
         ['Content For Injury Prevention Day', 'writtenPDFs/Content] - Google Docs.pdf',`For my National Injury Prevention Day entry website, my partner and I decided to write topics and subtopics for the site as a whole. Each focusing on specific aspects of their parent heading. We continuously sourced articles in facts and statistics we shared in our body paragraphs. One side fact about this site is that each topic has a color theme to distinguish their sections with the exception of the landing page which is colorful in nature.
+
         `],
         ['Content For Internet Safety','writtenPDFs/text.pdf',`Since this project was individual, I was also given the task to write all of the content for all the webpages. My overarching goal was to ground the argument in facts and logic to convince the visitor to take protective measures against various online dangers such as your digital footprint, harmful softwares, and handling your personal information.
+
 `],
-        [`E.M. Forster's "The Machine Stops"`,'writtenPDFs/donovan burrola - _The Machine Stops_ questions.pdf',`This writing prompt was our personal interpretation of the story “The Machine Stops” created by E.M. Forster, which is a story about a human population living underground under the watchful eye of a machine that takes care of them. The people in the story are physically unfit and are reliant on the machine to survive to the point where they condemn the outside world entirely. I described it as a dystopian tale and compared the author's portrayal of the world in the story to modern day society.
-        `]
+        [`E.M. Forster's "The Machine Stops"`,'writtenPDFs/donovan burrola - _The Machine Stops_ questions.pdf',`This writing prompt was our personal interpretation of the story “The Machine Stops” created by E.M. Forster, which is a story about a human population living underground under the watchful eye of a machine that takes care of them. The people in the story are physically unfit and are reliant on the machine to survive to the point where they condemn the outside world entirely. I described it as a dystopian tale and compared the author’s portrayal of the world in the story to modern day society.
+        `]      
     ],
     [
     ['Adobe Photoshop']
@@ -127,6 +129,7 @@ function sidePage(){
     document.querySelector('header>h1').style.opacity ='1'
     document.querySelector('header>h1').style.fontSize ='15em'
 }
+
 function sucessPage(){
     let x = Math.floor( Math.random() * 10 )
     console.log(x)
@@ -164,10 +167,21 @@ function engGalleryInit(){
     document.querySelector('.backarrow').style.left = '0'
     document.querySelector('.gallery-title').style.bottom = '0'
     document.querySelector('.prev-next-arrows').style.top = '0'
+    document.querySelector('.english-sample').style.right = '0'
+    document.querySelector('.eng-gallery-text').style.left ='0'
+}
+function otherGalleryInit(){
+    document.querySelector('.backarrow').style.left = '0'
+    document.querySelector('.gallery-title').style.bottom = '0'
+    document.querySelector('.prev-next-arrows').style.top = '0';
+    document.querySelector('.other-gallery-text').style.right ='0'
+    document.querySelector('.other-sample').style.left ='0'
 }
 
-
 let codeGalleryNum = 0;
+let engGalleryNum = 0;
+let otherGalleryNum = 0;
+
 
 function codeGallery(value){
     
@@ -193,6 +207,7 @@ function codeGallery(value){
         document.querySelector('.code-article').style.right = '0'
 }, 2000 );
 
+
     // codeGalleryNum += value;
     // if(codeGalleryNum < 0){
     //     codeGalleryNum = 4;
@@ -207,7 +222,62 @@ function codeGallery(value){
     // document.getElementById('codeText').innerHTML = galleryData[0][codeGalleryNum][2]
 }
 
-
+function engGallery(value){
+    document.querySelector('.backarrow').style.left = '-100vw'
+    document.querySelector('.gallery-title').style.bottom = '100vh'
+    document.querySelector('.prev-next-arrows').style.top = '100vh'
+    document.querySelector('.english-sample').style.right = '100vw'
+    document.querySelector('.eng-gallery-text').style.left ='100vw'
+    setTimeout(function(){ 
+        engGalleryNum += value;
+        if(engGalleryNum < 0){
+            engGalleryNum = 3;
+        } else if ( engGalleryNum > 3){
+            engGalleryNum = 0;
+        } else{
+            console.log('Gallery has not looped')
+        }
+        console.log(galleryData[1][engGalleryNum])
+        
+        document.getElementById('engTitle').innerHTML = galleryData[1][engGalleryNum][0]
+        document.getElementById('engSample').src = galleryData[1][engGalleryNum][1]
+        document.getElementById('engText').innerHTML = galleryData[1][engGalleryNum][2]
+        document.querySelector('.backarrow').style.left = '0'
+        document.querySelector('.gallery-title').style.bottom = '0'
+        document.querySelector('.prev-next-arrows').style.top = '0'
+        document.querySelector('.english-sample').style.right = '0'
+        document.querySelector('.eng-gallery-text').style.left ='0'
+       
+}, 2000 );
+}
+function otherGallery(value){
+    document.querySelector('.backarrow').style.left = '-100vw'
+    document.querySelector('.gallery-title').style.bottom = '100vh'
+    document.querySelector('.prev-next-arrows').style.top = '100vh'
+    document.querySelector('.english-sample').style.right = '100vw'
+    document.querySelector('.eng-gallery-text').style.left ='100vw'
+    setTimeout(function(){ 
+        otherGalleryNum += value;
+        if(otherGalleryNum < 0){
+            otherGalleryNum = 3;
+        } else if ( otherGalleryNum > 3){
+            otherGalleryNum = 0;
+        } else{
+            console.log('Gallery has not looped')
+        }
+        console.log(galleryData[1][otherGalleryNum])
+        
+        document.getElementById('otherTitle').innerHTML = galleryData[2][otherGalleryNum][0]
+        document.getElementById('otherSample').src = galleryData[2][otherGalleryNum][1]
+        document.getElementById('otherText').innerHTML = galleryData[2][otherGalleryNum][2]
+        document.querySelector('.backarrow').style.left = '0'
+        document.querySelector('.gallery-title').style.bottom = '0'
+        document.querySelector('.prev-next-arrows').style.top = '0'
+        document.querySelector('.other-sample').style.right = '0'
+        document.querySelector('.other-gallery-text').style.left ='0'
+       
+}, 2000 );
+}
 
 function resizeToMinimum(){
     var minimum    = [640, 480];
@@ -225,5 +295,14 @@ function resizeToMinimum(){
   window.addEventListener('resize', resizeToMinimum, false)
 
 
-
-  
+function loop(value){
+    engGalleryNum+=value
+    if(engGalleryNum < 0){
+        engGalleryNum = 3;
+    } else if ( engGalleryNum > 3){
+        engGalleryNum = 0;
+    } else{
+        console.log(engGalleryNum)
+    }
+    console.log(engGalleryNum)
+}
