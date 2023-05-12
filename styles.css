@@ -657,13 +657,30 @@ label{
 /* Mobile/tablet Website changes */
 @media (max-width:870px){
   .last{
-    /* top:3em; */
+    top:28vh;
   }
   .first{
     top:15vh;
+
+  }
+  h1{
+    font-size: 20em;
+  }
+  p{
+    font-size: 3em;
+  }
+  article div{
+    height: auto;
   }
   nav{
     flex-direction: row-reverse;
+
+  }
+  h2{
+    font-size: 9em;
+  }
+  section{
+    width: 75%;
 
   }
   /* nav ul{
@@ -682,13 +699,47 @@ label{
   nav ul>li>a{
 font-size: 6em;
   }
+  nav img{
+    height: 7em;
+    margin-top: 2em;
+    margin-right: 2em;
+
+  }
+  nav img:hover{
+    height: 7em;
+    margin-top: 2em;
+    margin-right: 2em;
+
+  }
+  footer ul{
+    flex-direction: column;
+
+  }
+  footer ul>li{
+    font-size: 2.5em;
+    margin-top: .5em;
+  }
+  footer p{
+    font-size: 3em;
+  }
+  footer>div>a{
+    width: 20%;
+  
+  }
+  footer>div{
+    width: 48%;
+  }
+  footer a{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   nav ul>li>a:hover{
     font-size: 6em;
   }
   .dropdown>button{
     font-size: 6em;
   }
-  .dropdown>button:hover{
+  .dropdown>button:hover{ 
     color:#ffffff;
     font-size: 5em;
   }
@@ -696,18 +747,18 @@ font-size: 6em;
     position: fixed;
     background-color: #212F45;
     height: 100vh;
-    transition: left 2s;
+    transition: left 1.25s;
     left: -100vw;
     width: 40%;
   }
   .mobile-dropdown-button{
     display: block;
-    width: 8em;
-    height: 8em;
-    background-image: url(images/Group\ 6.png);
+    width: 12em;
+    height: 12em;
+    background-image: url(images/Group\ 5.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 60%;
+    background-size: 75%;
   }
   ul>li>img{
     display: block;
@@ -722,4 +773,58 @@ font-size: 6em;
   .first{
     top: 5vh;
   } 
+}
+@media (max-width:650px){
+  h1{
+    font-size: 23em;
+  }
+  p{
+    font-size: 4.5em;
+  }
+  article div{
+    height: auto;
+  }
+  h2{
+    font-size: 12em;
+  }
+  section{
+    width: 80%;
+
+  }
+article>div{
+  width: 60%;
+}
+.float-images{
+  width: 35%;;
+}
+h3{
+  font-size: 6em;
+}
+
+
+
+
+
+
+
+footer ul>li{
+  font-size: 3.25em;
+}
+footer p{
+  font-size: 3.5em;
+}
+footer>div>a{
+  width: 22%;
+}
+
+footer>div{
+  width: 48%;
+}
+footer a{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+article{
+  margin-top:30em;
+}
 }
