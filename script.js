@@ -122,7 +122,7 @@ window.addEventListener("scroll", function() {
 function homePageInit(){
     document.querySelector('.arrow').style.marginTop='80vh'
     document.querySelector('nav').style.top ='0'
-    document.querySelector('.first').style.right ='-15vw'
+    document.querySelector('.first').style.left ='15vw'
     document.querySelector('.last').style.left ='-15vw'
 }
 function sidePage(){

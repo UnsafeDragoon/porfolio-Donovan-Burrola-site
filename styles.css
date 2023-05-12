@@ -476,10 +476,10 @@ h1{
 .first{
   top: calc( (16vw - 250px)*-.9);
   position: absolute;
-  right: 100%;  
-  width: 100%;
+  left: 100vw;  
+  /* width: 100%; */
   /* top:1em; */
-  transition: right 2s;
+  transition: left 2s;
   text-align: left;
 
 }
@@ -669,6 +669,16 @@ label{
   p{
     font-size: 3em;
   }
+  
+  .dropdown-options{
+    position: static;
+  }
+  .dropdown-options a{
+    font-size: 3em;
+    margin-top: 1em;
+    padding: 0;
+    padding-left: .5em;
+  }
   article div{
     height: auto;
   }
@@ -827,4 +837,5 @@ footer a{
 article{
   margin-top:30em;
 }
+
 }
