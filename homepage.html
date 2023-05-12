@@ -14,13 +14,15 @@
 <body onload="homePageInit()">
     <nav>
         <a href="homepage.html"><img src="images/DB.png" alt="Initials D B logo"></a>
-        <div class="mobile-dropdown" style="width: 60%;">
+        <div onclick="    document.querySelector('.mobile-dropdown').style.left = '0vw'
+        " class="mobile-dropdown-button"></div>
+        <div class="mobile-dropdown">
          <ul>
-            <li>            <img src="images/Group 6.png">
+            <li>  <img onclick="    document.querySelector('.mobile-dropdown').style.left = '-100vw' " src="images/Group 6.png">
             </li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><div class="dropdown">
-                <button>Portfolio</button>
+                <button><a href="portfolio.html">Portfolio</a></button>
                 <div class="dropdown-options">
                   <a href="#">Coding Work</a>
                   <a href="#">Writing Work</a>

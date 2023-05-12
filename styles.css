@@ -48,14 +48,18 @@ h4{
   background-color:rgba(139, 69, 19, 0);
   font-size:2.5em;
   cursor:pointer;
+ 
+}
+.dropdown>button>a{
   color: #006466;
   font-family: 'Nova Mono', monospace;
   transition: all 2s;
+  text-decoration: none;
 }
 
-.dropdown>button:hover{
+.dropdown>button>a:hover{
   color:#ffffff;
-  font-size: 3em;
+  font-size: 1.2em;
 }
 
 .dropdown-options {
@@ -84,6 +88,9 @@ h4{
   color: #0a0a23;
   background-color: #ddd;
 }
+.mobile-dropdown{
+  width: 60%;
+}
 h2{
   width: 100%;
   text-align: center;
@@ -111,6 +118,7 @@ nav ul{
   justify-content: space-around;
   list-style: none;
   width: 100%;
+  padding: 0;
 }
 ul>li>img{
   display: none;
@@ -682,13 +690,24 @@ font-size: 6em;
   }
   .dropdown>button:hover{
     color:#ffffff;
-    font-size: 6em;
+    font-size: 5em;
   }
   .mobile-dropdown{
     position: fixed;
     background-color: #212F45;
     height: 100vh;
-    left: 0;
+    transition: left 2s;
+    left: -100vw;
+    width: 40%;
+  }
+  .mobile-dropdown-button{
+    display: block;
+    width: 8em;
+    height: 8em;
+    background-image: url(images/Group\ 6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
   }
   ul>li>img{
     display: block;

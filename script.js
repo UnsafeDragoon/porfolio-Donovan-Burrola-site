@@ -312,3 +312,4 @@ function loop(value){
     }
     console.log(engGalleryNum)
 }
+
