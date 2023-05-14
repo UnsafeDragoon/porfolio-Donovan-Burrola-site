@@ -476,7 +476,7 @@ h1{
 .first{
   top: calc( (16vw - 250px)*-.9);
   position: absolute;
-  left: 100vw;  
+  left: -100vw;  
   /* width: 100%; */
   /* top:1em; */
   transition: left 2s;
@@ -773,6 +773,15 @@ font-size: 6em;
   ul>li>img{
     display: block;
   }
+  .image-carousel img{
+    position: relative;
+    /* top: 24em; */
+    width: 8vw;
+  }
+  .image-carousel div{
+    width: 100%;
+    height:60em;
+  }
   @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 10em); }
@@ -785,6 +794,30 @@ font-size: 6em;
   } 
 }
 @media (max-width:650px){
+  body{
+    background-size: 30vw;
+  }
+  .mobile-about-reverse{
+    flex-direction: column-reverse;
+  }
+  .mobile-about{
+    flex-direction: column;
+  }
+.mobile-about>div,
+.mobile-about-reverse>div{
+  width: 80%;
+  height:80em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+}
+.mobile-about>p,
+.mobile-about-reverse>p{
+  width: 100%;
+}
+  header{
+    background-size: 140%;
+  }
   h1{
     font-size: 23em;
   }

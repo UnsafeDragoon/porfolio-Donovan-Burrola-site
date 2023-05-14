@@ -13,13 +13,25 @@
 </head>
 <body onload="sidePage()">
     <nav>
-        <a href="homepage.html"><img src="images/DB.png" alt="D.B. logo"></a>
-        <ul>
+        <a href="homepage.html"><img src="images/DB.png" alt="Initials D B logo"></a>
+        <div onclick="    document.querySelector('.mobile-dropdown').style.left = '0vw'
+        " class="mobile-dropdown-button"></div>
+        <div class="mobile-dropdown">
+         <ul>
+            <li>  <img onclick="    document.querySelector('.mobile-dropdown').style.left = '-100vw' " src="images/Group 6.png">
+            </li>
             <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><div class="dropdown">
+                <button><a href="portfolio.html">Portfolio</a></button>
+                <div class="dropdown-options">
+                  <a href="#">Coding Work</a>
+                  <a href="#">Writing Work</a>
+                  <a href="#">Other Work</a>
+                </div>
+              </div></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul></div>
     </nav>
     <header style="background-image: url(images/venus.png);">
         <h1>Contact</h1>
@@ -168,6 +180,44 @@
             background-color: #01494b;
             cursor:pointer;
         }
+     
+        @media (max-width:870px){
+            label{
+                font-size: 2em;
+            }
+            form>div>input{
+                font-size: 3em;
+                border-radius: 1em;
+            }
+            #typeMessage{
+                font-size: 3em;
+            }
+            form>input{
+                font-size: 3em;
+                width: 30%;
+            }
+            
+        }
+        @media (max-width:650px){
+
+            section>div>div>a{
+            width: 30%;
+        }
+            label{
+                font-size: 4em;
+            }
+            form>div>input{
+                font-size: 4.5em;
+                border-radius: 1em;
+            }
+            #typeMessage{
+                font-size: 4.5em;
+            }
+            form>input{
+                font-size: 4.5em;
+                width: 40%;
+            }
+        }   
     </style>
 </body>
 </html>

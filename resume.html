@@ -13,13 +13,25 @@
 </head>
 <body onload="sidePage()">
     <nav>
-        <a href="homepage.html"><img src="images/DB.png" alt="D.B. logo"></a>
-        <ul>
+        <a href="homepage.html"><img src="images/DB.png" alt="Initials D B logo"></a>
+        <div onclick="    document.querySelector('.mobile-dropdown').style.left = '0vw'
+        " class="mobile-dropdown-button"></div>
+        <div class="mobile-dropdown">
+         <ul>
+            <li>  <img onclick="    document.querySelector('.mobile-dropdown').style.left = '-100vw' " src="images/Group 6.png">
+            </li>
             <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><div class="dropdown">
+                <button><a href="portfolio.html">Portfolio</a></button>
+                <div class="dropdown-options">
+                  <a href="#">Coding Work</a>
+                  <a href="#">Writing Work</a>
+                  <a href="#">Other Work</a>
+                </div>
+              </div></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul></div>
     </nav>
     <header style="background-image: url(images/mars.png);">
         <h1>Resume</h1>
@@ -191,6 +203,16 @@
         ol ul{
             padding-left: 3em;
         }
+        @media (max-width:650px){
+        section{
+            font-size: 3.5em;
+        }
+    }
+    @media (max-width:870px){
+        section{
+            font-size: 2.5em;
+        }
+    }
     </style>
 </body>
 </html>

@@ -13,13 +13,25 @@
 </head>
 <body onload="sidePage()">
     <nav>
-        <a href="homepage.html"><img src="images/DB.png" alt="D.B. logo"></a>
-        <ul>
+        <a href="homepage.html"><img src="images/DB.png" alt="Initials D B logo"></a>
+        <div onclick="    document.querySelector('.mobile-dropdown').style.left = '0vw'
+        " class="mobile-dropdown-button"></div>
+        <div class="mobile-dropdown">
+         <ul>
+            <li>  <img onclick="    document.querySelector('.mobile-dropdown').style.left = '-100vw' " src="images/Group 6.png">
+            </li>
             <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><div class="dropdown">
+                <button><a href="portfolio.html">Portfolio</a></button>
+                <div class="dropdown-options">
+                  <a href="#">Coding Work</a>
+                  <a href="#">Writing Work</a>
+                  <a href="#">Other Work</a>
+                </div>
+              </div></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul></div>
     </nav>
     <header style="background-image: url(images/FullMoon2010.png);">
         <h1>Portfolio</h1>
@@ -30,9 +42,9 @@
         </p>
     </section>
     <section class="image-carousel">
-        <img src="images/Group 10.png" alt="arrow-previous">
+        <img onclick="manualImageChange(-1)" src="images/Group 10.png" alt="arrow-previous">
         <div id="imageCarousel"></div>
-        <img  src="images/Group 10.png" style="transform: scale(-1);" alt="arrow-next">
+        <img onclick="manualImageChange(+1)"  src="images/Group 10.png" style="transform: scale(-1);" alt="arrow-next">
     </section>
 <!--  -->
 
@@ -139,6 +151,16 @@
     let imageRotationNum = 0;
     let imageSelection = ['url(images/webScreenshot5.png)','url(images/webScreenshot4.png)','url(images/webScreenshot1.png)']
 
+
+    function manualImageChange(value){
+        imageRotationNum+=value;
+        if(imageRotationNum<0){
+            imageRotationNum = 2;
+        } else if(imageRotationNum >2){
+            imageRotationNum = 0;
+        }
+        changeImage()
+    }
 
     function changeImage(){
         document.getElementById('imageCarousel').style.backgroundImage = imageSelection[imageRotationNum]

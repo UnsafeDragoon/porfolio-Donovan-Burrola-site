@@ -13,41 +13,53 @@
 </head>
 <body onload="sidePage()">
     <nav>
-        <a href="homepage.html"><img src="images/DB.png" alt="D.B. logo"></a>
-        <ul>
+        <a href="homepage.html"><img src="images/DB.png" alt="Initials D B logo"></a>
+        <div onclick="    document.querySelector('.mobile-dropdown').style.left = '0vw'
+        " class="mobile-dropdown-button"></div>
+        <div class="mobile-dropdown">
+         <ul>
+            <li>  <img onclick="    document.querySelector('.mobile-dropdown').style.left = '-100vw' " src="images/Group 6.png">
+            </li>
             <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><div class="dropdown">
+                <button><a href="portfolio.html">Portfolio</a></button>
+                <div class="dropdown-options">
+                  <a href="#">Coding Work</a>
+                  <a href="#">Writing Work</a>
+                  <a href="#">Other Work</a>
+                </div>
+              </div></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
+        </ul></div>
     </nav>
     <header style="background-image: url(images/638831main_globe_east_2048.png);">
         <h1>About Me</h1>
     </header>
     <h2>Who Am I?</h2>
     <section>
-        <article>
+        <article class="mobile-about-reverse ">
             <p>I am Donovan Burrola, a high school student currently attending both Bullard High School in Fresno, and the Center For Advanced Research and Technology in Clovis. I have lived in California for all my life and have never been out of the state. </p>
             <div class="float-images about-me-images" title='Portrait of Donovan Burrola' style="background-image: url(images/IMG_2223.JPG);"></div>
         </article>
     </section>
     <h2>Hobbies</h2>
     <section>
-        <article>
+        <article class="mobile-about ">
             <div class="float-images about-me-images" title='photo of master chief helmet' style="background-image: url(images/chief-helm.jpg);"></div>
             <p>One of my favorite hobbies is playing video games, as I have had such a passion for them ever since I was little. I will talk more about my appreciation for games in the what motivates me section down below, as it is also correlated with my life goals. Besides gaming, I also just have an infatuation with technology in general and love modding software beyond its original purpose. Setting aside tech, I also have a strong love for animals and have had many in the past, with my current one being my cat, Tigger. </p>
         </article>
     </section>
     <h2>Awards and Achievments</h2>
     <section>
-        <article>
+        <article class="mobile-about-reverse ">
             <p>One notable achievement is during middle school, as a member of Tenaya's Robotics Club, I received a top 3 finish during a notable tournament. During my high school career, I have also maintained 4.0 consistently and received multiple Principal's Honor Roll certificates as well as earning a score of 5 on my first ever AP test for World History, in which I was very proud of. Setting aside notable awards for more personal achievements, I also learned JavaScript of my own coalition via Meta JavaScript tutorials on Coursera.</p>
             <div class="float-images about-me-images" title='it was all a dream' style="background-image: url(images/unnamed.jpeg); background-size: 70%;"></div>
         </article>
     </section>
     <h2>What Motivates Me</h2>
     <section>
-        <article>
+        <article class="mobile-about ">
             <div class="float-images about-me-images" title='board game prototype for game website' style="background-image: url(images/unnamed\ \(1\).jpg);"></div>
             <p>I am a person driven by goals, and with that being said, my overarching goal is to eventually become a game developer. I have a deep passion for video games and having the ability to create games as a job sounds like a dream. I know the issues game developers face on a daily basis and have researched the position very thoroughly, even looking for colleges that teach specialized courses with an emphasis on game development. Regardless of that, I still wish to be involved and aspire to make a game that a variety of people may enjoy.</p>
         </article>
