@@ -28,7 +28,7 @@ let galleryData = [
         `],
         ['Content For Internet Safety','writtenPDFs/text.pdf',`Since this project was individual, I was also given the task to write all of the content for all the webpages. My overarching goal was to ground the argument in facts and logic to convince the visitor to take protective measures against various online dangers such as your digital footprint, harmful softwares, and handling your personal information.
 
-`],
+`,'https://safety-website.netlify.app/'],
         [`E.M. Forster's "The Machine Stops"`,'writtenPDFs/donovan burrola - _The Machine Stops_ questions.pdf',`This writing prompt was our personal interpretation of the story “The Machine Stops” created by E.M. Forster, which is a story about a human population living underground under the watchful eye of a machine that takes care of them. The people in the story are physically unfit and are reliant on the machine to survive to the point where they condemn the outside world entirely. I described it as a dystopian tale and compared the author’s portrayal of the world in the story to modern day society.
         `]      
     ],

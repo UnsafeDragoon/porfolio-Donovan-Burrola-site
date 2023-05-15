@@ -612,9 +612,11 @@ h1{
   display: flex;
   justify-content: space-around;
   width: 90%;
+  
 }
 .image-carousel>div{
   width: 50%;
+  animation: glow 2s infinite alternate;
   /* background-color: #00bfc3; */
   height: 30em;
   background-position: center;
