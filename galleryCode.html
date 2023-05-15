@@ -28,6 +28,7 @@
     </article>
     <script src="script.js"></script>
     <style>
+      
         body{
             /* overflow-y:hidden;   */
         }
@@ -36,7 +37,6 @@
             width: 50px;
         }
         body>a{
-            position: absolute;
             top:1em;
             left: 1em;
         }
@@ -87,7 +87,14 @@
             transition: right 2s;
         }
        
-        
+        @media(max-width:650px){
+            header>div>a>img{
+                width: 85vw;
+            }
+            .gallery-title{
+                margin-top: 2em;
+            }
+        }
     </style>
 </body>
 </html>

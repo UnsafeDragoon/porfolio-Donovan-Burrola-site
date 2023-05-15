@@ -641,7 +641,7 @@ label{
 }
 /* Gallery Pages  */
 .backarrow{
-  position: absolute;
+  position: relative;
   left: -100vw;
   transition: left 2s;
 }
@@ -681,6 +681,7 @@ label{
     padding: 0;
     padding-left: .5em;
   }
+  
   article div{
     height: auto;
   }
