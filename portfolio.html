@@ -149,14 +149,14 @@
     </style>
     <script>
     let imageRotationNum = 0;
-    let imageSelection = ['url(images/webScreenshot5.png)','url(images/webScreenshot4.png)','url(images/webScreenshot1.png)','url(images/webScreenshot2.png)','url(images/webScreenshot3.png)',]
+    let imageSelection = ['url(images/webScreenshot5.png)','url(images/webScreenshot4.png)','url(images/webScreenshot1.png)','url(images/webScreenshot3.png)']
 
 
     function manualImageChange(value){
         imageRotationNum+=value;
         if(imageRotationNum<0){
-            imageRotationNum = 4;
-        } else if(imageRotationNum >4){
+            imageRotationNum = 3;
+        } else if(imageRotationNum >3){
             imageRotationNum = 0;
         }
         changeImage()
@@ -171,8 +171,8 @@
 
         imageRotationNum+=1
         if(imageRotationNum<0){
-            imageRotationNum = 4;
-        } else if(imageRotationNum >4){
+            imageRotationNum = 3;
+        } else if(imageRotationNum >3){
             imageRotationNum = 0;
         }
         changeImage()
