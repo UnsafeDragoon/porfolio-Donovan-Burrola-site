@@ -533,7 +533,7 @@ h1{
 
 /* Portfolio Page */
 .three-links{
-  height: 100vh;
+  height: 140vh;
   width: 100%;
   /* max-height: 600px; */
   display: flex;
@@ -549,7 +549,7 @@ h1{
     transform: skew(40deg);
 }
 .portfolio-links{
-  height: 25%;
+  height: 20%;
   display: flex;
   overflow: hidden;
 }
