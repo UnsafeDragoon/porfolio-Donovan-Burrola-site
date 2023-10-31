@@ -165,6 +165,12 @@ function codeGalleryInit(){
     document.querySelector('.code-display').style.left ='0'
     document.querySelector('.code-article').style.right = '0'
 }
+function gameGalleryInit(){
+    document.querySelector('.backarrow').style.left = '0'
+    document.querySelector('.gallery-title').style.bottom = '0'
+    document.querySelector('.code-display').style.left ='0'
+    document.querySelector('.code-article').style.right = '0'
+}
 function engGalleryInit(){
     document.querySelector('.backarrow').style.left = '0'
     document.querySelector('.gallery-title').style.bottom = '0'
@@ -172,6 +178,7 @@ function engGalleryInit(){
     document.querySelector('.english-sample').style.right = '0'
     document.querySelector('.eng-gallery-text').style.left ='0'
 }
+
 function otherGalleryInit(){
     document.querySelector('.backarrow').style.left = '0'
     document.querySelector('.gallery-title').style.bottom = '0'
@@ -182,6 +189,7 @@ function otherGalleryInit(){
 
 let codeGalleryNum = 0;
 let engGalleryNum = 0;
+let gameGalleryNum = 0;
 let otherGalleryNum = 0;
 
 
@@ -252,6 +260,32 @@ function engGallery(value){
        
 }, 2000 );
 }
+
+function gameGallery(value){
+    
+    document.querySelector('.backarrow').style.left = '-100vw'
+    document.querySelector('.gallery-title').style.bottom = '100vh'
+    document.querySelector('.code-display').style.left ='100vw'
+    document.querySelector('.code-article').style.right = '100vw'
+    setTimeout(function(){ gameGalleryNum += value;
+        if(gameGalleryNum < 0){
+            gameGalleryNum = 4;
+        } else if ( gameGalleryNum > 4){
+            gameGalleryNum = 0;
+        } else{
+            console.log('Gallery has not looped')
+        }
+        console.log(galleryData[0][gameGalleryNum])
+        document.getElementById('codeTitle').innerHTML = galleryData[0][gameGalleryNum][0]
+        document.getElementById('codeImage').src = galleryData[0][gameGalleryNum][1]
+        document.getElementById('codeText').innerHTML = galleryData[0][gameGalleryNum][2]
+        document.querySelector('.backarrow').style.left = '0'
+         document.querySelector('.gallery-title').style.bottom = '0'
+        document.querySelector('.code-display').style.left ='0'
+        document.querySelector('.code-article').style.right = '0'
+}, 2000 );
+}
+
 function otherGallery(value){
     document.querySelector('.backarrow').style.left = '-100vw'
     document.querySelector('.gallery-title').style.bottom = '100vh'
