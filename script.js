@@ -38,7 +38,27 @@ let galleryData = [
     ['Meta Javascript Course','images/certificate.PNG',`On my own time, I learned JavaScript to assist in web development for class projects. This course included its own programming assignments, one of which included the usage of JSON. The course was officially offered by Meta, and was presented by coursera.
     `]
 
-    ]
+    ],
+
+
+    [
+        ['The Cart','images/gmOne.png',`The first fully fledged game that I have every made. It is relatively simple in gameplay, having the player search the map for glowing red lights while evading monsters throughout the school halls. The player may purchase upgrades to enhance their efficiency. While it may not be my favorite game, it does hold a special place in my heart, as I originally had so many ideas for it that couldn't come to fruition because of my own inexperience. In the future, it would be interesting to come back to this concept and remake the game in another format with the knowledge I have now.
+        `],
+        ['Food Fighterz','images/gmTwo.png',`This is the second game I had the pleasure of making, and if I'm to be completely honest, it might just be my favorite. While it may not be the most asthetically pleasing title, it definitely was the most fun to work on. We were given a prompt of making a game about the phrase "Food Fight", and what immediately came to my mind was a mortal-kombat-esque tournament in which foods (And one man) from different regions gather to fight to the death in order to become the Food King! Each character has their own backstory and plans for if and when they do get Food King status. Gameplay is very similar to super smash brothers, that in which being a fighting game where the goal is to knock all other opponents off the map. Even though I believe it to be a huge improvement from my previous title, I still see room for potential, and the hitboxes for each character need to be properly balanced as Greg (The Man) has proven to be king in almost every 1 on 1 encounter.
+
+        `],
+        ['Super Mario: Fallout','images/gmThree.png',`At one point, I tried a very primative version of modding via SMBX, which is a community made mario level editor that allows users to make their own mario games with custom assets. I sought to make a mario mod based on one of my favorite franchises growing up, Fallout. I had a lot of fun making this modification of the original game. Placing easter eggs and references to enemies, events, and npcs that occur throughout the entire Fallout franchise (Including The Interplay Games) was great and almost felt like a momento to my childhood. In the end, I was very proud of the game I had completed and while I don't see myself coming back to super mario modding in the future, I can see myself visiting this mod every now and then for nostalgic purposes.
+
+        `],
+        ['UnderTail','images/gmFour.png',`At this point, I had become familiarized with the game engine I was using up until this point, and was comfortable making more complex systems. When the time came, I started working on my first collaborative game, on a team of developers rather than flying solo. I won't lie and say that there weren't hiccups at moments, such as conflicting segments of code that invalidated the entire game, or the every so often missing asset that we would have to recreate. Thankfully, these problems became less detremental as time went on, as I learned how to better handle and prevent such errors from occuring. As for what the game is about; the game is based off Michael Crichton's Jurassic Park, a novel about a dystopian outlook on the recreation of dinosaurs. Our game handles this story in a way very similar to UnderTale, hence the similar name, which uses RPG free roam and ability to talk with npcs in the game world.
+
+        `],
+        ['Soul Survivor','images/gmFive.png',`Yet another collaborative game and carrying over the knowledge learned from its predecessor, went very smoothly. The only complaints I could have is that our group may have been a bit too.... ambitious with what we wanted. I say this because we essentially had triple AAA standards set on a game made by high schools students with only a month's time to spare. For comparision and consistancy sake Fallout 3 by Bethesda, a game very similar to ours by a well established developer, had 80 developers working on that game over the span of 4 years. Absolutely bonkers but we had the ambition. With all this said and done, I very much enjoyed every second I spent on the game as it pertains to the type of game genre I wish to create in the future, RPG story based games. And for what we had (and planned to have), we excelled drastically. As for the game itself, the game is based off the epic tale of Beowulf, a heroric viking known throughout the land for slaying monsters and protecting the weak. Our game is very comedic and loosely based off the novel, taking its own take on the tale of Beowulf rather than being an exact one-to-one. The gameplay consists of exploring an open world environment with quests, boss fights, friendly npcs, various enemy types, and different regions to explore.
+
+        `]
+
+
+    ],
 ]
 
 
@@ -183,6 +203,7 @@ function otherGalleryInit(){
 let codeGalleryNum = 0;
 let engGalleryNum = 0;
 let otherGalleryNum = 0;
+let gameGalleryNum = 0;
 
 
 function codeGallery(value){
@@ -284,6 +305,50 @@ function otherGallery(value){
        
 }, 2000 );
 }
+
+
+
+
+function gameGallery(value){
+    
+    document.querySelector('.backarrow').style.left = '-100vw'
+    document.querySelector('.gallery-title').style.bottom = '100vh'
+    document.querySelector('.code-display').style.left ='100vw'
+    document.querySelector('.code-article').style.right = '100vw'
+    setTimeout(function(){ gameGalleryNum += value;
+        if(gameGalleryNum < 0){
+            gameGalleryNum = 4;
+        } else if ( gameGalleryNum > 4){
+            gameGalleryNum = 0;
+        } else{
+            console.log('Gallery has not looped')
+        }
+        console.log(galleryData[3][gameGalleryNum])
+        document.getElementById('codeTitle').innerHTML = galleryData[3][gameGalleryNum][0]
+        document.getElementById('codeImage').src = galleryData[3][gameGalleryNum][1]
+        document.getElementById('codeText').innerHTML = galleryData[3][gameGalleryNum][2]
+        document.querySelector('.backarrow').style.left = '0'
+         document.querySelector('.gallery-title').style.bottom = '0'
+        document.querySelector('.code-display').style.left ='0'
+        document.querySelector('.code-article').style.right = '0'
+}, 2000 );
+
+
+    // codeGalleryNum += value;
+    // if(codeGalleryNum < 0){
+    //     codeGalleryNum = 4;
+    // } else if ( codeGalleryNum > 4){
+    //     codeGalleryNum = 0;
+    // } else{
+    //     console.log('Gallery has not looped')
+    // }
+    // console.log(galleryData[0][codeGalleryNum])
+    // document.getElementById('codeTitle').innerHTML = galleryData[0][codeGalleryNum][0]
+    // document.getElementById('codeImage').src = galleryData[0][codeGalleryNum][1]
+    // document.getElementById('codeText').innerHTML = galleryData[0][codeGalleryNum][2]
+}
+
+
 
 function resizeToMinimum(){
     var minimum    = [640, 480];

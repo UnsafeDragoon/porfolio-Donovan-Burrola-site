@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donovan Burrola Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/DB.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Nova+Mono&display=swap" rel="stylesheet">
+</head>
+<body onload="codeGalleryInit()">
+    <a class='backarrow' href="portfolio.html"><img src="images/Group 11.png" alt="backwards icon" ></a>
+    <header>
+        <h3 class="gallery-title" id="codeTitle">The Cart</h3>
+        <div class="code-display">
+            <div><a onclick="gameGallery(-1)"><img src="images/Group 10.png" alt="arrow-previous"></a></div>
+            <a href="#"><img id='codeImage' src="images/gmOne.png" alt="website screenshot"></a>
+            <div><a class='float-images' onclick="gameGallery(1)"><img src="images/Group 10.png" alt="arrow-next" style="transform: scale(-1,1);"></a></div>
+        </div>
+        
+    </header>
+    <article class="code-article">
+        <p id="codeText">The first fully fledged game that I have every made. It is relatively simple in gameplay, having the player search the map for glowing red lights while evading monsters throughout the school halls. The player may purchase upgrades to enhance their efficiency. While it may not be my favorite game, it does hold a special place in my heart, as I originally had so many ideas for it that couldn't come to fruition because of my own inexperience. In the future, it would be interesting to come back to this concept and remake the game in another format with the knowledge I have now.
+        </p>
+    </article>
+    <script src="script.js"></script>
+    <style>
+      
+        body{
+            /* overflow-y:hidden;   */
+        }
+        body>a>img{
+            
+            width: 50px;
+        }
+        body>a{
+            top:1em;
+            left: 1em;
+        }
+        header{
+            height: fit-content;
+            flex-direction: column;
+            transition: none;
+            margin-left: 0;
+            
+        }
+        header>div{
+            position: relative;
+            left: 100VW;
+            transition: left 2s;
+
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        header>div>a>img{
+            width: 50vw;
+            max-width: 1000px;;
+            /* box-shadow: 1em 1em 100px 0px white; */
+            animation: glow 2s infinite alternate;
+        }
+        header>div>div>a{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 30px;
+            width: 4em;
+        }
+        h3{
+            width: 100%;
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+        }
+        article{
+            width: 80%;
+            margin-top: 4em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4em;            
+            position: relative;
+            right: 100vw;
+            transition: right 2s;
+        }
+       
+        @media(max-width:650px){
+            header>div>a>img{
+                width: 85vw;
+            }
+            .gallery-title{
+                margin-top: 2em;
+            }
+        }
+    </style>
+</body>
+</html>
